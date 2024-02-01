@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
 import { InscriptionsComponent } from './components/inscriptions/inscriptions.component';
 import { FeedbacksComponent } from './components/feedbacks/feedbacks.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FeedbacksComponent } from './components/feedbacks/feedbacks.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule,
     RouterModule.forRoot([]),
   ],

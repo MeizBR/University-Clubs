@@ -48,10 +48,6 @@ class TrainingsModel {
     return result.rows[0];
   }
 
-  // You can add other methods as needed for this model
-
-  // ...
-
 }
 
 module.exports = TrainingsModel;

@@ -1,1 +1,40 @@
-<p>inscriptions works!</p>
+<app-navbar></app-navbar>
+<h1>Subscribe now ! Don't wait</h1>
+<form (ngSubmit)="addInscription()">
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">Student Firstname</span>
+        <input type="text" class="form-control" placeholder="Firstname" [(ngModel)]="inscriptionData.student_firstname" name="firstname" required>
+    </div>
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">Student Lastname</span>
+        <input type="text" class="form-control" placeholder="Lastname" [(ngModel)]="inscriptionData.student_lastname" name="lastname" required>
+    </div>
+    <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelectClass">Student Class</label>
+        <select class="form-select" id="inputGroupSelectClass" [(ngModel)]="inscriptionData.student_section" name="class" required>
+          <option selected disabled>Choose...</option>
+          <option value="GT">GT</option>
+          <option value="GII">GII</option>
+          <option value="GEC">GEC</option>
+          <option value="IDSD">IDSD</option>
+        </select>
+    </div>
+    <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelectYear">Student Year</label>
+        <select class="form-select" id="inputGroupSelectYear" [(ngModel)]="inscriptionData.student_year" name="year" required>
+          <option selected disabled>Choose...</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+    </div>
+    <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelectTraining">Training</label>
+        <select class="form-select" id="inputGroupSelectTraining" [(ngModel)]="inscriptionData.training_name" name="training" required>
+          <option selected disabled>Choose...</option>
+          <option *ngFor="let training of trainingsList" [ngValue]="training.training_name">{{training.training_name}}</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Inscription</button>
+</form>
+<app-footer></app-footer>
