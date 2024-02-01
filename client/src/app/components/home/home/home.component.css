@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+#welcome-message {
+    color: green;
+    text-align: center;
+    font-family: Agbalumo;
+}
+
+#descriptive-paragraph-container {
+    margin: 20px;
+    padding: 10px 75px;
+    text-align: justify;
+    border: 2px solid green;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px lightgreen;
+}

@@ -12,8 +12,10 @@ export class TrainingComponent implements OnDestroy {
   getTrainingsOb: Subscription;
 
   constructor(private myService: MyServiceService) {
-    this.getTrainingsOb = this.myService.getAllTrainings().subscribe(data => this.trainingsList = data);
-    console.log(this.trainingsList);
+    this.getTrainingsOb = this.myService.getAllTrainings().subscribe(data => {
+      this.trainingsList = data;
+      console.log('Received data:', this.trainingsList);
+    });
   }
 
   ngOnDestroy(): void {

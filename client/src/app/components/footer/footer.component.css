@@ -55,16 +55,9 @@
   }
   
   .footer-basic .copyright {
-    margin-top:15px;
+    margin-top:10px;
     text-align:center;
     font-size:13px;
     color:#aaa;
     margin-bottom:0;
   }
-
-  .letterspacing {
-    font-family:verdana;
-    letter-spacing:-6px;
-    font-size:35px;
-    color: green;
-}

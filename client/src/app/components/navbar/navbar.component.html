@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light m-3">
     <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page"><img class="logo" [src]="logoPath" [width]="logoWidth" /></a>
-    <a class="navbar-brand ml-2 text-success" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">University Clubs</a>
+    <a class="navbar-brand ml-2 text-success" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">University Clubs For Students Trainings & Feedbacks</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -13,22 +13,12 @@
           <a class="nav-link" routerLink="/trainings" routerLinkActive="active" ariaCurrentWhenActive="page">Trainings</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Workshops</a>
+          <a class="nav-link" routerLink="/inscriptions" routerLinkActive="active" ariaCurrentWhenActive="page">Students Inscriptions</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Student Inscriptions</a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="nav-link dropdown-item" href="#">Trainings</a>
-            <a class="nav-link dropdown-item" href="#">Workshops</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/feedbacks" routerLinkActive="active" ariaCurrentWhenActive="page">Students Feedbacks</a>
         </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Student Feedbacks</a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="nav-link dropdown-item" href="#">Trainings</a>
-              <a class="nav-link dropdown-item" href="#">Workshops</a>
-            </div>
-          </li>
       </ul>
     </div>
 </nav>
+

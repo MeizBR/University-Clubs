@@ -1,20 +1,22 @@
+<app-navbar></app-navbar>
 <div class="trainings-container mt-5">
     <h2 class="glow">Latest available trainings list</h2>
     <div class="row">
-        <div class="card col" style="width: 15rem;" *ngFor="let training of trainingsList">
+        <div class="card col-3 training-item" *ngFor="let training of trainingsList">
             <img src="../../../../assets/images/html css training.jpg" class="card-img-top training-image" alt="training-image">
             <div class="card-body">
-                <h6 class="card-title"><span>Training Id: </span>{{training.trainingId}}</h6>
-                <h6 class="card-title"><span>Training Name: </span>{{training.trainingName}}</h6>
-                <h6 class="card-title"><span>Training Date: </span>{{training.trainingDate |date: "EEE MMM dd yyyy"}}</h6>
-                <h6 class="card-title"><span>Training Hour: </span>{{training.trainingHour}}</h6>
-                <h6 class="card-title"><span>Training Capacity: </span>{{training.trainingCapacity}}</h6>
-                <h6 class="card-title"><span>Training Place: </span>{{training.trainingPlace}}</h6>
-                <h6 class="card-title"><span>Training Instructor: </span>{{training.trainingInstructor}}</h6>
+                <h6 class="card-title"><span>Training Id: </span>{{training.training_id}}</h6>
+                <h6 class="card-title"><span>Training Name: </span>{{training.training_name}}</h6>
+                <h6 class="card-title"><span>Training Date: </span>{{training.training_date}}</h6>
+                <h6 class="card-title"><span>Training Hour: </span>{{training.training_hour}}</h6>
+                <h6 class="card-title"><span>Training Capacity: </span>{{training.training_capacity}}</h6>
+                <h6 class="card-title"><span>Training Place: </span>{{training.training_place}}</h6>
+                <h6 class="card-title"><span>Training Instructor: </span>{{training.training_instructor}}</h6>
                 <h6><span>Training Details:</span></h6>
-                <p class="card-text">{{training.trainingDetails}}</p>
+                <p class="card-text">{{training.training_details}}</p>
                 <a href="#" class="btn btn-primary">Subscribe now !</a>
             </div>
         </div>
     </div>
 </div>
+<app-footer></app-footer>

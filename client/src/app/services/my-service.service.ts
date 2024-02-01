@@ -10,6 +10,6 @@ export class MyServiceService {
   }
 
   getAllTrainings() {
-    return this.http.get("http://localhost:5000/api/trainings")
+    return this.http.get("http://localhost:5000/api/trainings");
   }
 }

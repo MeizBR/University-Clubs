@@ -31,3 +31,15 @@ h6, p, a {
       text-shadow: 0 0 20px, 0 0 20px green, 0 0 20px green, 0 0 50px green, 0 0 20px green, 0 0 20px green, 0 0 20px green;
     }
 }
+
+.row {
+    margin: auto;
+    width: 95%;
+    border: 1px solid black;
+}
+
+.row .training-item {
+    width: 24.4%;
+    margin: 5px;
+    text-align: center;
+}
